@@ -1,5 +1,3 @@
-local AUTOJUMP_DIR = debug.getinfo(1, "S").source:match[[^@?(.*[\/])[^\/]-$]] .. "..\\AutoJump"
-local AUTOJUMP_BIN_DIR = AUTOJUMP_DIR .. "\\bin"
 local AUTOJUMP_BIN = (AUTOJUMP_BIN_DIR or clink.get_env("LOCALAPPDATA") .. "\\autojump\\bin") .. "\\autojump"
 
 function autojump_add_to_database()
